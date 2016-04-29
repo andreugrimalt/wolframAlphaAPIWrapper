@@ -8,7 +8,7 @@ class WolframAlpha {
     this.appId = appId;
     this.baseUrl = baseUrl;
   }
-
+  // Make Wolfram Alpha request URL
   makeUrl(input,parameters){
     var tempUrl=this.baseUrl;
     tempUrl+="input="+input+"&appid="+this.appId;
@@ -19,7 +19,7 @@ class WolframAlpha {
     }
     return tempUrl;
   }
-
+  // Make query to Wolfram Alpha
   makeQuery(url){
     return new Promise(function(resolve,reject){
       request(url, function (error, response, body) {
@@ -31,7 +31,7 @@ class WolframAlpha {
       });
     });
   }
-
+  // Parse XML response
   parseXml(xml){
     return new Promise(function(resolve,reject){
       resolve(parseXml(xml));

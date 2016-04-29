@@ -1,3 +1,12 @@
+# WolframAlpha API Wrapper
+
+## WolframAlpha.js contains the main functionality
+
+## CustomWolframAlpha.js contains custom functionality. It inherits from WolframAlpha.js
+
+### Example:
+
+```
 'use strict'
 
 import CustomWolframAlpha from './CustomWolframAlpha.js'
@@ -22,3 +31,4 @@ customWolframAlpha.makeQuery(url).then(function(xmlData){
 }).catch(function(error){
   console.log(error);
 });
+```
