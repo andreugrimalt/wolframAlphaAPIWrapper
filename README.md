@@ -1,10 +1,15 @@
 # WolframAlpha API Wrapper
 
-## WolframAlpha.js 
+## WolframAlpha.js
 Contains the main functionality
 
-## CustomWolframAlpha.js 
+## CustomWolframAlpha.js
 Contains custom functionality. It inherits from WolframAlpha.js
+
+## Build with:
+```
+npm run build
+```
 
 ### Example:
 
