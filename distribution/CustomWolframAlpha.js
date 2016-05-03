@@ -43,6 +43,13 @@ var CustomWolframAlpha = function (_WolframAlpha) {
         resolve(parsedData.root.children[0].children[0].children[1].content);
       });
     }
+  }, {
+    key: 'returnGeneralQuery',
+    value: function returnGeneralQuery(parsedData) {
+      return new Promise(function (resolve, reject) {
+        resolve(parsedData.root.children[0].children[0].children[1].content);
+      });
+    }
   }]);
 
   return CustomWolframAlpha;
