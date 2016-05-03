@@ -17,6 +17,11 @@ class CustomWolframAlpha extends WolframAlpha{
       resolve(parsedData.root.children[0].children[0].children[1].content);
     });
   }
+  returnGeneralQuery(parsedData){
+    return new Promise(function(resolve,reject){
+      resolve(parsedData.root.children[0].children[0].children[1].content);
+    });
+  }
 }
 
 
