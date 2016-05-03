@@ -2,16 +2,16 @@
   "name": "wolframalpha",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./distribution/CustomWolframAlpha.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "babel src --presets babel-preset-es2015 --out-dir distribution && node ./distribution/app.js"
   },
   "author": "",
   "license": "ISC",
-  "main":"distribution/CustomWolframAlpha.js",
   "dependencies": {
     "dotenv": "^2.0.0",
+    "request": "^2.72.0",
     "xml-parser": "^1.2.1"
   },
   "devDependencies": {
