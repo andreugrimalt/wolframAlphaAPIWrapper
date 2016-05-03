@@ -6,7 +6,7 @@ import parseXml from 'xml-parser';
 class WolframAlpha {
   constructor(appId, baseUrl) {
     this.appId = appId;
-    this.baseUrl = baseUrl;
+    this.baseUrl = baseUrl ||  "http://api.wolframalpha.com/v2/query?";
   }
   // Make Wolfram Alpha request URL
   makeUrl(input,parameters){
@@ -39,11 +39,6 @@ class WolframAlpha {
   }
 
   // Implement custom functions
-  returnCityPopulation(parsedData){
-    return new Promise(function(resolve,reject){
-      reject("returnCityPopulation not implemented!");
-    });
-  }
 }
 
 export default WolframAlpha;
