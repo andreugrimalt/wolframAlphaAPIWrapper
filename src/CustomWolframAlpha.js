@@ -14,8 +14,8 @@ class CustomWolframAlpha extends WolframAlpha{
     });
   }
 
-  getCityPopulation(parsedData){
-    return returnGeneralQuery(parsedData);
+  getPopulation(parsedData){
+    return this.returnGeneralQuery(parsedData);
   }
 
   getTemperature(parsedData){

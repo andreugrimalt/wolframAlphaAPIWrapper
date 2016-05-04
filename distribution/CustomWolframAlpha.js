@@ -36,9 +36,9 @@ var CustomWolframAlpha = function (_WolframAlpha) {
       });
     }
   }, {
-    key: 'getCityPopulation',
-    value: function getCityPopulation(parsedData) {
-      return returnGeneralQuery(parsedData);
+    key: 'getPopulation',
+    value: function getPopulation(parsedData) {
+      return this.returnGeneralQuery(parsedData);
     }
   }, {
     key: 'getTemperature',
